@@ -18,3 +18,9 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka       
       #defaultZone：为本地部署eureka，如果是部署到阿里云腾讯云等由他们提供地点如shanghai:、beijing:等
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
